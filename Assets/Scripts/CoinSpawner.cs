@@ -1,7 +1,6 @@
 using UnityEngine;
 
 [RequireComponent(typeof(RandomPositionGenerator))]
-
 public class CoinSpawner : MonoBehaviour
 {
     [SerializeField] private Coin _prefab;
