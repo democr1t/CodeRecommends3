@@ -9,6 +9,7 @@ public class PlayerMover : MonoBehaviour
     private float _speed;
     private float _jumpForce;
     private float _horizontalInput;
+    private const string _isWalking = "IsWalking";
 
     private void Start()
     {
@@ -51,11 +52,11 @@ public class PlayerMover : MonoBehaviour
     {
         if (_horizontalInput != 0)
         {
-            _animator.SetBool("IsWalking", true);
+            _animator.SetBool(_isWalking, true);
         }
         else
         {
-            _animator.SetBool("IsWalking", false);
+            _animator.SetBool(_isWalking, false);
         }
     }
 }
